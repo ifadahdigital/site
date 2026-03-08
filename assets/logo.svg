@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48">
+  <!-- Icon mark -->
+  <rect x="0" y="8" width="8" height="32" rx="2" fill="#0A66C2"/>
+  <rect x="12" y="0" width="8" height="48" rx="2" fill="#0A66C2"/>
+  <rect x="24" y="8" width="8" height="32" rx="2" fill="#0A66C2"/>
+  <!-- Wordmark -->
+  <text x="42" y="34" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#1B1F23" letter-spacing="1">IFADAH</text>
+  <text x="42" y="46" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="400" fill="#0A66C2" letter-spacing="2">DIGITAL SOLUTIONS</text>
+</svg>

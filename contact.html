@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact IFADAH Digital Solutions — engineering software development and legacy modernization.">
+  <title>Contact — IFADAH Digital Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo"><img src="assets/logo.svg" alt="IFADAH Digital Solutions"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Have a project, a challenge, or just want to explore ideas? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <!-- Replace with your actual email -->
+              <a href="mailto:info@ifadah.com">info@ifadah.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text">
+              <h4>Location</h4>
+              <p>United Kingdom</p>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener" class="linkedin-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>IFADAH Digital Solutions</h4>
+              <p>Follow us on LinkedIn for POCs, articles, and updates</p>
+            </div>
+          </a>
+
+          <!-- What to expect -->
+          <div style="margin-top:32px;">
+            <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:1px;">What to Expect</h3>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:32px;height:32px;min-width:32px;background:var(--primary-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;font-weight:700;">1</div>
+                <p style="font-size:0.88rem;color:var(--text-secondary);">We'll respond within 1–2 business days</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:32px;height:32px;min-width:32px;background:var(--primary-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;font-weight:700;">2</div>
+                <p style="font-size:0.88rem;color:var(--text-secondary);">A short discovery call to understand your challenge</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:32px;height:32px;min-width:32px;background:var(--primary-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;font-weight:700;">3</div>
+                <p style="font-size:0.88rem;color:var(--text-secondary);">A clear proposal with approach, scope, and next steps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <!--
+          TO ENABLE EMAIL DELIVERY:
+          1. Sign up at https://formspree.io (free tier available)
+          2. Create a form and copy your endpoint ID
+          3. Replace action="#" with action="https://formspree.io/f/YOUR_ID"
+          4. Remove the onsubmit handler from the form element
+        -->
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organisation</label>
+              <input type="text" id="company" name="company" placeholder="Your organisation (optional)">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="engineering-app">Engineering Application</option>
+                <option value="legacy">Legacy System Help</option>
+                <option value="ai">AI Integration</option>
+                <option value="poc">Proof of Concept</option>
+                <option value="other">Other / General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or challenge…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;border-radius:8px;padding:14px;">
+              Send Message
+            </button>
+            <p style="font-size:0.78rem;color:var(--text-secondary);margin-top:12px;text-align:center;">
+              Or connect directly on <a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener" style="color:var(--primary);">LinkedIn</a>.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/logo-white.svg" alt="IFADAH Digital Solutions" style="height:40px;">
+          <p>Engineering software development and legacy system modernization. 25 years of delivering solutions that work.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Engineering Apps</a></li>
+            <li><a href="services.html">Legacy Modernization</a></li>
+            <li><a href="services.html">AI Integration</a></li>
+            <li><a href="services.html">POC Development</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 IFADAH Digital Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
