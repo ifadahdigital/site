@@ -120,20 +120,33 @@ if (allProjectsContainer) {
   });
 }
 
-// ---- Contact form (no-op, wire to backend/Formspree later) ----
+// ---- Contact form — AJAX submission to Formspree ----
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = contactForm.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent!';
+    btn.textContent = 'Sending…';
     btn.disabled = true;
-    btn.style.background = '#2E7D32';
-    setTimeout(() => {
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        contactForm.innerHTML = '<div style="text-align:center;padding:40px 0;"><div style="font-size:2rem;margin-bottom:16px;">✓</div><h3 style="margin-bottom:8px;">Message Sent!</h3><p style="color:var(--text-secondary);">Thanks for reaching out. We\'ll get back to you within 1–2 business days.</p></div>';
+      } else {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or email us directly.');
+      }
+    } catch {
       btn.textContent = 'Send Message';
       btn.disabled = false;
-      btn.style.background = '';
-      contactForm.reset();
-    }, 3000);
+      alert('Network error. Please check your connection and try again.');
+    }
   });
 }
