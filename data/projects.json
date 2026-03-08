@@ -1,16 +1,29 @@
 [
+   {
+    "id": 3,
+    "title": "RevitClaudeConnector",
+    "description": "Proof-of-concept integrating Revit and Calude via MCP.",
+    "category": ["ai","poc" ],
+    "tech": ["Claude", "Revit", "MCP", "WPF"],
+    "image": "assets/images/placeholder.svg",
+    "video": "assets/videos/RevitClaudeConnector.mp4",
+    "linkedinUrl": "https://lnkd.in/erjf-inG",
+    "githubUrl": "",
+    "year": 2025,
+    "featured": true
+  },
   {
     "id": 1,
-    "title": "Structural Steel Design Tool",
-    "description": "A WPF desktop application for structural engineers to design and validate steel connections per Eurocode standards. Reduces manual calculation time significantly.",
+    "title": "CadPad.Net",
+    "description": "2D CAD library using .Net6. A WPF .NET6 program is included to demonstrate how the library can be used using one of Microsoft technologies for Windows applications. It should be very easy to convert the program to another technology such as Winforms because the library has not been written to target a specific Windows technology.",
     "category": ["engineering"],
-    "tech": ["C#", "WPF", ".NET", "SQL Server"],
-    "image": "assets/images/placeholder.svg",
+    "tech": ["C#", "WPF", ".NET"],
+    "image": "assets/images/CadPad.Net.png",
     "video": "",
     "linkedinUrl": "",
-    "githubUrl": "",
-    "year": 2023,
-    "featured": true
+    "githubUrl": "https://github.com/IbrahimFahdah/CadPad.Net",
+    "year": 2020,
+    "featured": false
   },
   {
     "id": 2,
@@ -25,20 +38,7 @@
     "year": 2024,
     "featured": true
   },
-  {
-    "id": 3,
-    "title": "AI-Assisted Code Review POC",
-    "description": "Proof-of-concept integrating LLM-based code analysis into a CI/CD pipeline to automatically flag legacy anti-patterns, security issues, and suggest modernization paths.",
-    "category": ["poc", "ai"],
-    "tech": ["Python", "Azure OpenAI", "C#", "GitHub Actions"],
-    "image": "assets/images/placeholder.svg",
-    "video": "",
-    "linkedinUrl": "",
-    "githubUrl": "",
-    "year": 2024,
-    "featured": true
-  },
-  {
+   {
     "id": 4,
     "title": "WPF Dashboard Framework",
     "description": "Reusable WPF dashboard framework for engineering data visualization, featuring real-time charts, configurable widgets, and export to PDF/Excel.",
