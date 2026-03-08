@@ -33,7 +33,7 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
  */
 function buildProjectCard(p) {
   const media = p.video
-    ? `<iframe class="project-media" src="${p.video}" title="${p.title}" allowfullscreen></iframe>`
+    ? `<video class="project-media" src="${p.video}" controls preload="none" poster="${p.image || ''}"></video>`
     : `<img class="project-media" src="${p.image || 'assets/images/placeholder.svg'}" alt="${p.title}" loading="lazy">`;
 
   const tags = (p.tech || [])
