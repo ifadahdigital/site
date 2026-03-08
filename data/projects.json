@@ -1,8 +1,21 @@
 [
+    {
+    "id": 8,
+    "title": "AI-enhanced Cold-form Element Design",
+    "description": "A legacy desktop version converted to AI-enhanced, cloud-based design tool for cold-rolled purlins, side rails, eaves beams and mezzanine floor sections to Eurocodes (Demo available upon request)",
+    "category": ["engineering", "legacy"],
+    "tech": ["ASP.NET", "C#", "Wind Analysis"],
+    "image": "assets/images/MetPurl.png",
+    "video": "",
+    "linkedinUrl": "",
+    "githubUrl": "",
+    "year": 2025,
+    "featured": true
+    },
   {
     "id": 2,
     "title": "Solar Panel Design",
-    "description": "A web-based application that enables users to design solar panel systems for carports. (Demo available upon request.)",
+    "description": "A web-based application that enables users to design solar panel systems for carports. (Demo available upon request)",
     "category": ["engineering"],
     "tech": ["ASP.NET", "C#", "Google Maps"],
     "image": "assets/images/Metsolar.png",
@@ -11,8 +24,8 @@
     "githubUrl": "",
     "year": 2020,
     "featured": true
-  },
-   {
+    },
+    {
     "id": 3,
     "title": "RevitClaudeConnector",
     "description": "Proof-of-concept integrating Revit and Calude via MCP.",
@@ -21,6 +34,19 @@
     "image": "assets/images/RevitClaudeConnector.png",
     "video": "assets/videos/RevitClaudeConnector.mp4",
     "linkedinUrl": "https://lnkd.in/erjf-inG",
+    "githubUrl": "",
+    "year": 2025,
+    "featured": true
+  },
+   {
+    "id": 3,
+    "title": "Space Sheet Builder",
+    "description": "A Revit Addon to allow users to automaicaly generate views (Plan, elevations, and 3D) and place them on sheets. (Demo available upon request)",
+    "category": ["engineering"],
+    "tech": [ "Revit", "Addon", "WPF"],
+    "image": "assets/images/SpaceSheetBuilder.png",
+    "video": "assets/videos/SpaceSheetBuilder.mp4",
+    "linkedinUrl": "",
     "githubUrl": "",
     "year": 2025,
     "featured": true
