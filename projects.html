@@ -54,7 +54,7 @@
       "id": <unique number>,
       "title": "Your Project Title",
       "description": "Short description visible on the card.",
-      "category": ["engineering"],        ← options: engineering | poc | legacy | ai
+      "category": ["engineering"],        ← options: engineering | poc | legacy | ai | opensource
       "tech": ["C#", "WPF", ".NET"],     ← tech stack badges
       "image": "assets/images/myimage.jpg",  ← or leave "" for placeholder
       "video": "",                        ← YouTube embed URL (optional), overrides image
@@ -70,21 +70,24 @@
     <div class="container">
 
       <!-- Filter Bar -->
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="engineering">
-          <i class="fas fa-drafting-compass"></i> Engineering
-        </button>
-        <button class="filter-btn" data-filter="poc">
-          <i class="fas fa-flask"></i> POC
-        </button>
-        <button class="filter-btn" data-filter="legacy">
-          <i class="fas fa-layer-group"></i> Legacy
-        </button>
-        <button class="filter-btn" data-filter="ai">
-          <i class="fas fa-robot"></i> AI
-        </button>
-      </div>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="engineering">
+                <i class="fas fa-drafting-compass"></i> Engineering
+            </button>
+            <button class="filter-btn" data-filter="legacy">
+                <i class="fas fa-layer-group"></i> Legacy
+            </button>
+            <button class="filter-btn" data-filter="ai">
+                <i class="fas fa-robot"></i> AI
+            </button>
+            <button class="filter-btn" data-filter="poc">
+                <i class="fas fa-flask"></i> POC
+            </button>
+            <button class="filter-btn" data-filter="opensource">
+                <i class="fab fa-github"></i> Open Source
+            </button>
+        </div>
 
       <!-- Projects Grid — rendered by JS -->
       <div class="projects-grid" id="all-projects">

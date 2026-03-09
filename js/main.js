@@ -100,9 +100,10 @@ if (allProjectsContainer) {
     });
 
   function renderProjects(filter) {
+    const filterLower = filter.toLowerCase();
     const filtered = filter === 'all'
       ? allProjects
-      : allProjects.filter(p => (p.category || []).includes(filter));
+      : allProjects.filter(p => (p.category || []).some(c => c.toLowerCase() === filterLower));
 
     if (filtered.length === 0) {
       allProjectsContainer.innerHTML = '<p class="no-projects">No projects in this category yet.</p>';

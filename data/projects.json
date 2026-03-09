@@ -29,7 +29,7 @@
         "id": 3,
         "title": "RevitClaudeConnector",
         "description": "Proof-of-concept integrating Revit and Calude via MCP.",
-        "category": [ "ai", "poc" ],
+        "category": [ "ai", "poc", "opensource" ],
         "tech": [ "Claude", "Revit", "MCP", "WPF" ],
         "image": "assets/images/RevitClaudeConnector.png",
         "video": "assets/videos/RevitClaudeConnector.mp4",
@@ -114,6 +114,19 @@
         "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_revit-bim-ai-activity-7368859008209670144-3gug",
         "githubUrl": "",
         "year": 2025,
+        "featured": false
+    },
+    {
+        "id": 2,
+        "title": "IFC Files and Digital Signatures",
+        "description": "Digital signatures play a crucial role in authenticating documents and ensuring data integrity in the digital age. In BIM-based projects, stakeholders frequently exchange various document formats throughout the project lifecycle.",
+        "category": [ "poc", "opensource" ],
+        "tech": [ "IFC", "BIM" ],
+        "image": "assets/images/IfcFilesSigning.png",
+        "video": "assets/videos/IfcFilesSigning.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_ifc-files-and-digital-signatures-digital-activity-7119256779263254528-HCnG",
+        "githubUrl": "https://github.com/IbrahimFahdah/IfcFilesSigning",
+        "year": 2023,
         "featured": false
     }
 ]
