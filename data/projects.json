@@ -141,5 +141,18 @@
         "githubUrl": "https://github.com/DXMDigital/POC_IfcExplicit",
         "year": 2025,
         "featured": false
+    },
+    {
+        "id": 0,
+        "title": "Dubai BIM Submission: Revit Add-on for Native Model QA/QC Validation",
+        "description": "A Revit Add-on to process native Revit models and generate QA/QC reports without the need to export the model to IFC files.",
+        "category": [ "poc", "opensource" ],
+        "tech": [ "Revit","WPF", "C#", "IFC" ],
+        "image": "assets/images/DMRevitQAQC.png",
+        "video": "assets/ides/DMRevitQAQC.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_bim-revit-buildinginformationmodeling-activity-7220708008849272832-08ba",
+        "githubUrl": "",
+        "year": 2024,
+        "featured": false
     }
 ]
