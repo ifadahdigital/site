@@ -1,6 +1,6 @@
 [
     {
-        "id": 8,
+        "id": 0,
         "title": "AI-enhanced Cold-form Element Design",
         "description": "A legacy desktop version converted to AI-enhanced, cloud-based design tool for cold-rolled purlins, side rails, eaves beams and mezzanine floor sections to Eurocodes (Demo available upon request)",
         "category": [ "engineering", "legacy" ],
@@ -13,7 +13,7 @@
         "featured": true
     },
     {
-        "id": 2,
+        "id": 0,
         "title": "Solar Panel Design",
         "description": "A web-based application that enables users to design solar panel systems for carports. (Demo available upon request)",
         "category": [ "engineering" ],
@@ -26,7 +26,7 @@
         "featured": true
     },
     {
-        "id": 3,
+        "id": 0,
         "title": "RevitClaudeConnector",
         "description": "Proof-of-concept integrating Revit and Calude via MCP.",
         "category": [ "ai", "poc", "opensource" ],
@@ -39,7 +39,7 @@
         "featured": true
     },
     {
-        "id": 3,
+        "id": 0,
         "title": "Space Sheet Builder",
         "description": "A Revit Addon to allow users to automaicaly generate views (Plan, elevations, and 3D) and place them on sheets. (Demo available upon request)",
         "category": [ "engineering" ],
@@ -52,7 +52,7 @@
         "featured": true
     },
     {
-        "id": 1,
+        "id": 0,
         "title": "Wind360 - wind analysis toolkit",
         "description": "A comprehensive wind analysis toolkit for engineers working across the UK and Ireland. It provides a powerful API integration for third-party integration for fast and accurate wind pressure results tailored to your workflow.",
         "category": [ "engineering" ],
@@ -65,7 +65,7 @@
         "featured": false
     },
     {
-        "id": 1,
+        "id": 0,
         "title": "CadPad.Net",
         "description": "2D CAD library using .Net6. A WPF .NET6 program is included to demonstrate how the library can be used using one of Microsoft technologies for Windows applications. It should be very easy to convert the program to another technology such as Winforms because the library has not been written to target a specific Windows technology.",
         "category": [ "engineering", "opensource" ],
@@ -78,7 +78,7 @@
         "featured": false
     },
     {
-        "id": 7,
+        "id": 0,
         "title": "CrossSection.Net",
         "description": "CrossSection.Net is a C# package for the analysis of arbitrary cross sections using finite elements.",
         "category": [ "engineering", "opensource" ],
@@ -91,7 +91,7 @@
         "featured": false
     },
     {
-        "id": 2,
+        "id": 0,
         "title": "Ifc Desktop Viewer",
         "description": "Enabling Offline Usage of IFC Online Viewer in Desktop Applications.",
         "category": [ "poc", "engineering" ],
@@ -104,7 +104,7 @@
         "featured": false
     },
     {
-        "id": 2,
+        "id": 0,
         "title": "Nano Banana inside Revit",
         "description": "Using Gemini 2.5 Flash Image (Nano Banana) directly within Revit for quick rendering.",
         "category": [ "poc", "ai", "opensource" ],
@@ -117,7 +117,7 @@
         "featured": false
     },
     {
-        "id": 2,
+        "id": 0,
         "title": "IFC Files and Digital Signatures",
         "description": "Digital signatures play a crucial role in authenticating documents and ensuring data integrity in the digital age. In BIM-based projects, stakeholders frequently exchange various document formats throughout the project lifecycle.",
         "category": [ "poc", "opensource" ],
@@ -127,6 +127,19 @@
         "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_ifc-files-and-digital-signatures-digital-activity-7119256779263254528-HCnG",
         "githubUrl": "https://github.com/IbrahimFahdah/IfcFilesSigning",
         "year": 2023,
+        "featured": false
+    },
+    {
+        "id": 0,
+        "title": "Convert Implicit Ifc to Explicit",
+        "description": "Digital signatures play a crucial role in authenticating documents and ensuring data integrity in the digital age. In BIM-based projects, stakeholders frequently exchange various document formats throughout the project lifecycle.",
+        "category": [ "poc", "opensource" ],
+        "tech": [ "IFC", "BIM" ],
+        "image": "assets/images/POC_IfcExplicit.png",
+        "video": "",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_ifc-openbim-digitaltwin-activity-7319061461836722176-z9m0",
+        "githubUrl": "https://github.com/DXMDigital/POC_IfcExplicit",
+        "year": 2025,
         "featured": false
     }
 ]
