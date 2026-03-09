@@ -131,6 +131,19 @@
     },
     {
         "id": 0,
+        "title": "IFC To HTML Converter",
+        "description": "Transform IFC models into single and self-contained HTML files. The generated HTML files encompass model data, visualization, as well as viewing and navigation functionalities.",
+        "category": [ "poc", "opensource"  ],
+        "tech": [ "IFC", "BIM" ],
+        "image": "assets/images/IfcToHtml.png",
+        "video": "assets/videos/IfcToHtml.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_ifc-to-html-converter-transform-ifc-activity-7126480315014889472-PI7e",
+        "githubUrl": "",
+        "year": 2024,
+        "featured": false
+    },
+    {
+        "id": 0,
         "title": "Convert Implicit Ifc to Explicit",
         "description": "Digital signatures play a crucial role in authenticating documents and ensuring data integrity in the digital age. In BIM-based projects, stakeholders frequently exchange various document formats throughout the project lifecycle.",
         "category": [ "poc", "opensource" ],
