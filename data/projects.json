@@ -116,6 +116,19 @@
         "year": 2025,
         "featured": false
     },
+     {
+        "id": 0,
+        "title": "Chat with your IFC BIM mode",
+        "description": "A  proof-of-concept application developed to demonstrate the idea of interacting with IFC models using natural languages. The app uses a large language model (LLM).",
+        "category": [ "poc", "ai", "opensource" ],
+        "tech": [ "LLM", "IFC" ],
+        "image": "assets/images/ChatWithIfc.png",
+        "video": "assets/videos/ChatWithIfc.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_chat-with-your-ifc-bim-models-the-video-below-activity-7079789208801882113-JQzt",
+        "githubUrl": "",
+        "year": 2024,
+        "featured": false
+    },
     {
         "id": 0,
         "title": "IFC Files and Digital Signatures",
