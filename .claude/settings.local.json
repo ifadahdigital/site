@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.teicl.co.uk)"
+      "WebFetch(domain:www.teicl.co.uk)",
+      "Bash(for f in \"c:/Users/ibrah/Desktop/Devops/ifadah_website/index.html\" \"c:/Users/ibrah/Desktop/Devops/ifadah_website/about.html\" \"c:/Users/ibrah/Desktop/Devops/ifadah_website/contact.html\" \"c:/Users/ibrah/Desktop/Devops/ifadah_website/services.html\" \"c:/Users/ibrah/Desktop/Devops/ifadah_website/academy.html\")",
+      "Bash(do)",
+      "Bash(sed -i 's|<p>&copy; 2025 IFADAH Digital Solutions\\\\. All rights reserved\\\\.</p>|<p>\\\\&copy; <span id=\"\"year\"\"><\\\\/span> IFADAH Digital Solutions. All rights reserved.<\\\\/p>\\\\n      <script>document.getElementById\\(''''year''''\\).textContent = new Date\\(\\).getFullYear\\(\\);<\\\\/script>|' \"$f\")",
+      "Bash(done)",
+      "Bash(sed -i 's|<p>&copy; 2026 IFADAH Digital Solutions\\\\. All rights reserved\\\\.</p>|<p>\\\\&copy; <span id=\"\"year\"\"><\\\\/span> IFADAH Digital Solutions. All rights reserved.<\\\\/p>\\\\n      <script>document.getElementById\\(''''year''''\\).textContent = new Date\\(\\).getFullYear\\(\\);<\\\\/script>|' \"c:/Users/ibrah/Desktop/Devops/ifadah_website/projects.html\")"
     ]
   }
 }
