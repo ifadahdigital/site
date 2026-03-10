@@ -162,6 +162,28 @@ ul { list-style: none; }
 }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu a:hover { color: var(--primary); }
+/* Academy nav badge — distinct amber/gold to signal external community */
+.nav-links li.nav-academy-item {
+  border-left: 1px solid var(--border);
+  padding-left: 8px;
+  margin-left: 4px;
+}
+.nav-links a.nav-academy {
+  color: #B45309;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  font-weight: 600;
+}
+.nav-links a.nav-academy:hover {
+  color: #78350F;
+  background: #FDE68A;
+  border-color: #D97706;
+}
+.mobile-menu a.nav-academy-mobile {
+  color: #B45309;
+  font-weight: 600;
+}
+.mobile-menu a.nav-academy-mobile:hover { color: #78350F; }
 
 /* ============================================================
    HERO

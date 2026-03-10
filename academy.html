@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IFADAH AEC Digital Academy — free technical skills for AEC professionals. Join our community on Skool.">
+  <title>AEC Digital Academy | IFADAH</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* ---- Academy page overrides ---- */
+    :root {
+      --academy:        #F59E0B;
+      --academy-dark:   #D97706;
+      --academy-deeper: #92400E;
+      --academy-light:  #FEF3C7;
+    }
+
+    .academy-hero {
+      background: linear-gradient(135deg, #1B1F23 0%, #3B2C0A 100%);
+      color: var(--white);
+      padding: 80px 0 64px;
+      text-align: center;
+    }
+    .academy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,158,11,0.15);
+      border: 1px solid rgba(245,158,11,0.4);
+      color: #FCD34D;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .academy-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .academy-hero h1 span {
+      color: var(--academy);
+    }
+    .academy-hero p {
+      font-size: 1.15rem;
+      color: #CBD5E0;
+      max-width: 600px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .btn-academy {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--academy);
+      color: #1B1F23;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 8px;
+      transition: all 0.2s;
+      border: 2px solid var(--academy);
+    }
+    .btn-academy:hover {
+      background: var(--academy-dark);
+      border-color: var(--academy-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245,158,11,0.4);
+    }
+    .btn-academy-outline {
+      background: transparent;
+      color: var(--academy);
+      border-color: var(--academy);
+      font-weight: 600;
+    }
+    .btn-academy-outline:hover {
+      background: rgba(245,158,11,0.1);
+      transform: translateY(-2px);
+    }
+
+    /* What you get */
+    .academy-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .academy-feature {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--card-shadow);
+      border-top: 3px solid var(--academy);
+    }
+    .academy-feature-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--academy-light);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--academy-deeper);
+      margin-bottom: 16px;
+    }
+    .academy-feature h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .academy-feature p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Who it's for */
+    .audience-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .audience-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      box-shadow: var(--card-shadow);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .audience-item i {
+      color: var(--academy);
+      font-size: 1.1rem;
+      width: 20px;
+    }
+
+    /* CTA banner */
+    .academy-cta {
+      background: linear-gradient(135deg, #3B2C0A 0%, #1B1F23 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 72px 0;
+    }
+    .academy-cta h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .academy-cta h2 span { color: var(--academy); }
+    .academy-cta p {
+      color: #CBD5E0;
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Note banner */
+    .external-note {
+      background: var(--academy-light);
+      border: 1px solid #F59E0B;
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: var(--academy-deeper);
+      margin-bottom: 48px;
+    }
+    .external-note i { font-size: 1rem; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo"><img src="assets/logo.svg" alt="IFADAH Digital Solutions"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-academy-item"><a href="academy.html" class="nav-academy active">Academy ↗</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="academy.html" class="nav-academy-mobile">Academy ↗</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="academy-hero">
+    <div class="container">
+      <div class="academy-badge">
+        <i class="fas fa-graduation-cap"></i> Community · Free · AEC
+      </div>
+      <h1>IFADAH <span>AEC Digital Academy</span></h1>
+      <p>
+        We believe technical skills should be accessible to everyone in the AEC industry.
+        The Academy is our free community where engineers, designers, and construction professionals
+        learn modern digital tools — no paywalls, no gatekeeping.
+      </p>
+      <a href="https://www.skool.com/aec-digital-academy-by-ifadah-3436" target="_blank" rel="noopener" class="btn-academy">
+        <i class="fas fa-arrow-right"></i> Join the Academy — It's Free
+      </a>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="external-note">
+        <i class="fas fa-info-circle"></i>
+        The Academy is hosted on Skool, an external platform. Clicking "Join" will open a new tab — it's completely free to sign up.
+      </div>
+      <h2 class="section-title">What You'll Find Inside</h2>
+      <p class="section-subtitle">Practical, industry-focused content built by engineers who've done the work.</p>
+      <div class="academy-features">
+        <div class="academy-feature">
+          <div class="academy-feature-icon"><i class="fas fa-code"></i></div>
+          <h3>Technical Tutorials</h3>
+          <p>Step-by-step guides covering engineering software, automation scripts, APIs, and digital workflows used in real AEC projects.</p>
+        </div>
+        <div class="academy-feature">
+          <div class="academy-feature-icon"><i class="fas fa-users"></i></div>
+          <h3>Peer Community</h3>
+          <p>Connect with other AEC professionals learning the same tools. Ask questions, share solutions, and grow together.</p>
+        </div>
+        <div class="academy-feature">
+          <div class="academy-feature-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI & Automation in AEC</h3>
+          <p>Explore how AI and automation are changing engineering workflows — from data extraction to generative design to legacy modernization.</p>
+        </div>
+        <div class="academy-feature">
+          <div class="academy-feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Real-World Focus</h3>
+          <p>No fluff. Everything is grounded in actual engineering challenges we've encountered across 25+ years in the industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Who Is It For?</h2>
+      <p class="section-subtitle">If you work in AEC and want to level up your digital skills, you belong here.</p>
+      <div class="audience-list">
+        <div class="audience-item"><i class="fas fa-hard-hat"></i> Structural Engineers</div>
+        <div class="audience-item"><i class="fas fa-drafting-compass"></i> Civil Engineers</div>
+        <div class="audience-item"><i class="fas fa-building"></i> Architects</div>
+        <div class="audience-item"><i class="fas fa-project-diagram"></i> BIM Managers</div>
+        <div class="audience-item"><i class="fas fa-tools"></i> MEP Engineers</div>
+        <div class="audience-item"><i class="fas fa-chart-line"></i> Project Managers</div>
+        <div class="audience-item"><i class="fas fa-laptop-code"></i> Tech-curious AEC pros</div>
+        <div class="audience-item"><i class="fas fa-graduation-cap"></i> Students & Graduates</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY FREE -->
+  <section class="section bg-light">
+    <div class="container" style="max-width:720px;text-align:center;">
+      <h2 class="section-title">Why Free?</h2>
+      <p style="font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-top:16px;">
+        The AEC industry is full of talented professionals who lack access to modern technical training.
+        University curricula lag behind industry tools, and quality upskilling is expensive.
+        We built the Academy because we've been there — and because a more digitally capable
+        industry means better, safer, more efficient built environments for everyone.
+        <br><br>
+        This is our way of giving back.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="academy-cta">
+    <div class="container">
+      <h2>Ready to <span>Level Up?</span></h2>
+      <p>Join for free and start learning today. No credit card, no commitment.</p>
+      <div class="cta-btns">
+        <a href="https://www.skool.com/aec-digital-academy-by-ifadah-3436" target="_blank" rel="noopener" class="btn-academy">
+          <i class="fas fa-graduation-cap"></i> Join the Academy on Skool
+        </a>
+        <a href="contact.html" class="btn-academy btn-academy-outline">
+          Work With Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/logo-white.svg" alt="IFADAH Digital Solutions" style="height:40px;">
+          <p>Engineering software development and legacy system modernization. 25 years of delivering solutions that work.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="academy.html" style="color:#B45309;font-weight:600;">Academy ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Engineering Apps</a></li>
+            <li><a href="services.html">Legacy Modernization</a></li>
+            <li><a href="services.html">AI Integration</a></li>
+            <li><a href="services.html">POC Development</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/ifadah" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="https://www.skool.com/aec-digital-academy-by-ifadah-3436" target="_blank" rel="noopener" style="color:#B45309;">AEC Digital Academy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 IFADAH Digital Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
