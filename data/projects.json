@@ -116,7 +116,7 @@
         "year": 2025,
         "featured": false
     },
-     {
+    {
         "id": 0,
         "title": "Chat with your IFC BIM mode",
         "description": "A  proof-of-concept application developed to demonstrate the idea of interacting with IFC models using natural languages. The app uses a large language model (LLM).",
@@ -146,7 +146,7 @@
         "id": 0,
         "title": "IFC To HTML Converter",
         "description": "Transform IFC models into single and self-contained HTML files. The generated HTML files encompass model data, visualization, as well as viewing and navigation functionalities.",
-        "category": [ "poc", "opensource"  ],
+        "category": [ "poc", "opensource" ],
         "tech": [ "IFC", "BIM" ],
         "image": "assets/images/IfcToHtml.png",
         "video": "assets/videos/IfcToHtml.mp4",
@@ -173,12 +173,25 @@
         "title": "Dubai BIM Submission: Revit Add-on for Native Model QA/QC Validation",
         "description": "A Revit Add-on to process native Revit models and generate QA/QC reports without the need to export the model to IFC files.",
         "category": [ "poc", "opensource" ],
-        "tech": [ "Revit","WPF", "C#", "IFC" ],
+        "tech": [ "Revit", "WPF", "C#", "IFC" ],
         "image": "assets/images/DMRevitQAQC.png",
         "video": "assets/ides/DMRevitQAQC.mp4",
         "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_bim-revit-buildinginformationmodeling-activity-7220708008849272832-08ba",
         "githubUrl": "",
         "year": 2024,
+        "featured": false
+    },
+    {
+        "id": 0,
+        "title": "IFC Viewer with Local LLM",
+        "description": "Extending IFClite viewer (open source) to use local LLM via ollama to generarte script.",
+        "category": [ "poc", "ai", "opensource" ],
+        "tech": [ "LLM", "IFC" ],
+        "image": "assets/images/IFCliteWithLocalLLM.mp4",
+        "video": "assets/videos/IFCliteWithLocalLLM.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_ifclite-script-editor-with-offline-ai-activity-7437735523483279360-Qdq",
+        "githubUrl": "https://github.com/IbrahimFahdah?tab=repositories",
+        "year": 2026,
         "featured": false
     }
 ]
