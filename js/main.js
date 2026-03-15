@@ -2,6 +2,14 @@
    IFADAH Digital Solutions — main.js
    ============================================================ */
 
+// ---- Cache-busting: unique version per page load ----
+const CACHE_V = '?v=' + Date.now();
+
+// Rewrite all static asset img srcs so browsers never use a cached copy
+document.querySelectorAll('img[src^="assets/"]').forEach(el => {
+  el.src = el.getAttribute('src').split('?')[0] + CACHE_V;
+});
+
 // ---- Mobile Navigation ----
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -32,9 +40,10 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
  *   linkedinUrl, githubUrl, year, featured
  */
 function buildProjectCard(p) {
+  const imgSrc = (p.image || 'assets/images/placeholder.svg') + CACHE_V;
   const media = p.video
-    ? `<video class="project-media" src="${p.video}" controls preload="none" poster="${p.image || ''}"></video>`
-    : `<img class="project-media" src="${p.image || 'assets/images/placeholder.svg'}" alt="${p.title}" loading="lazy">`;
+    ? `<video class="project-media" src="${p.video}${CACHE_V}" controls preload="none" poster="${p.image ? p.image + CACHE_V : ''}"></video>`
+    : `<img class="project-media" src="${imgSrc}" alt="${p.title}" loading="lazy">`;
 
   const tags = (p.tech || [])
     .map(t => `<span class="tag">${t}</span>`)
@@ -71,7 +80,7 @@ function buildProjectCard(p) {
 // ---- Render featured projects on homepage ----
 const featuredContainer = document.getElementById('featured-projects');
 if (featuredContainer) {
-  fetch('data/projects.json')
+  fetch('data/projects.json' + CACHE_V)
     .then(r => r.json())
     .then(projects => {
       const featured = projects.filter(p => p.featured).slice(0, 3);
@@ -89,7 +98,7 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 if (allProjectsContainer) {
   let allProjects = [];
 
-  fetch('data/projects.json')
+  fetch('data/projects.json' + CACHE_V)
     .then(r => r.json())
     .then(projects => {
       allProjects = projects;
