@@ -193,5 +193,18 @@
         "githubUrl": "https://github.com/IbrahimFahdah/ifclite-with-local-llm",
         "year": 2026,
         "featured": false
+    },
+    {
+        "id": 0,
+        "title": "ISO19650 Knowledge Maps",
+        "description": "ISO19650 Knowledge Maps was created to help people understand the ISO 19650 standard through interactive visual maps.",
+        "category": [ "poc", "opensource" ],
+        "tech": [ "JS", "CSS" ],
+        "image": "assets/images/ISO19650KnowledgeMaps.png",
+        "video": "assets/videos/ISO19650KnowledgeMaps.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_navigating-iso-19650-visually-knowledge-activity-7438587659578617856-RWaB?utm_source=share&utm_medium=member_desktop&rcm=ACoAABY6QL4BlKEjJPbcPEFf0umBJyfNNTj6VH0",
+        "githubUrl": "https://github.com/IbrahimFahdah/iso19650-knowledge-maps",
+        "year": 2026,
+        "featured": false
     }
 ]
