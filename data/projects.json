@@ -1,13 +1,13 @@
 [
         {
         "id": 0,
-        "title": "Dubai Building Code AI Assistant",
-        "description": "An AI-powered assistant for the Dubai Building Code using Retrieval-Augmented Generation (RAG) to enable accurate, source-grounded answers from complex regulatory documents.",
+        "title": "Turning Your BIM Archive into Living Intelligence",
+        "description": "A proof of concept that transforms archived BIM deliverables into an AI-ready organizational knowledge base. Built an automated pipeline that monitors folders for new IFC models, extracts structured information, and continuously updates a searchable knowledge repository.",
          "category": [ "poc", "ai", "opensource" ],
-        "tech": [ "Python", "LLM", "Document Processing", "RAG" ],
-        "image": "assets/images/DubaiBuildingCodeAIAssistant.png",
-        "video": "assets/videos/DubaiBuildingCodeAIAssistant.mp4",
-        "linkedinUrl": "",
+        "tech": [ "Python", "LLM", "MCP", "SQL" ],
+        "image": "assets/images/TurningYourBIMintoLivingIntelligence.png",
+        "video": "assets/videos/TurningYourBIMintoLivingIntelligence.mp4",
+        "linkedinUrl": "https://www.linkedin.com/posts/dr-ibrahim-fahdah-13aa80a4_in-action-turning-your-bim-archive-into-ugcPost-7476551125165596673-uS0c/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABY6QL4BlKEjJPbcPEFf0umBJyfNNTj6VH0",
         "githubUrl": "",
         "year": 2026,
         "featured": true
