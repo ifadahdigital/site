@@ -1,4 +1,17 @@
 [
+        {
+        "id": 0,
+        "title": "Dubai Building Code AI Assistant",
+        "description": "An AI-powered assistant for the Dubai Building Code using Retrieval-Augmented Generation (RAG) to enable accurate, source-grounded answers from complex regulatory documents.",
+         "category": [ "poc", "ai", "opensource" ],
+        "tech": [ "Python", "LLM", "Document Processing", "RAG" ],
+        "image": "assets/images/DubaiBuildingCodeAIAssistant.png",
+        "video": "assets/videos/DubaiBuildingCodeAIAssistant.mp4",
+        "linkedinUrl": "",
+        "githubUrl": "",
+        "year": 2026,
+        "featured": true
+    },
     {
         "id": 0,
         "title": "AI-enhanced Cold-form Element Design",
