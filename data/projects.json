@@ -16,7 +16,7 @@
         "id": 0,
         "title": "HandyBIM",
         "description": "A fun, interactive IFC viewer that lets you explore IFC models using hand gestures. Rotate, zoom, pan, section, and inspect BIM models in a more intuitive way 🙃 .",
-         "category": [ "poc", "google mediapipe, "ai", "opensource" ],
+         "category": [ "poc", "google mediapipe", "ai", "opensource" ],
         "tech": [ "Three.js", "ML", "IFC" ],
         "image": "assets/images/HandyBIM.png",
         "video": "assets/videos/HandyBIM.mp4",
