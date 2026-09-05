@@ -14,6 +14,19 @@
     },
     {
         "id": 0,
+        "title": "HandyBIM",
+        "description": "A fun, interactive IFC viewer that lets you explore IFC models using hand gestures. Rotate, zoom, pan, section, and inspect BIM models in a more intuitive way 🙃 .",
+         "category": [ "poc", "google mediapipe, "ai", "opensource" ],
+        "tech": [ "Three.js", "ML", "IFC" ],
+        "image": "assets/images/HandyBIM.png",
+        "video": "assets/videos/HandyBIM.mp4",
+        "linkedinUrl": "https://lnkd.in/p/d-XzYBht",
+        "githubUrl": "https://github.com/IbrahimFahdah/HandyBIM",
+        "year": 2026,
+        "featured": true
+    },
+    {
+        "id": 0,
         "title": "Dubai Building Code AI Assistant",
         "description": "An AI-powered assistant for the Dubai Building Code using Retrieval-Augmented Generation (RAG) to enable accurate, source-grounded answers from complex regulatory documents.",
          "category": [ "poc", "ai", "opensource" ],
